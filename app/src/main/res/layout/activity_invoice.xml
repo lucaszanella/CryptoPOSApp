@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.lucaszanella.cryptoposapp.InvoiceActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="551dp"
+        android:orientation="vertical"
+        android:weightSum="20"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <include layout="@layout/price_of_invoice" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="11"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/qr_image"
+                android:layout_width="match_parent"
+                android:layout_height="209dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/qrcode_example" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:fontFamily="sans-serif"
+                android:text="3Ldyss741Bu5kUhPBUPXE7hdpdNSNn2nWG"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </FrameLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
