@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1, new String[]{"foxbit", "Mercado Bitcoin", "bitfinex", "poloniex"});
         listView.setAdapter(adapter);
         Intent intent = new Intent(this, InvoiceActivity.class);
-        intent.putExtra(CRYPTO_AMOUNT, "0.006627 BTC");
+        intent.putExtra(CRYPTO_AMOUNT, "0.006627");
         intent.putExtra(CRYPTO_TYPE, "bitcoin");
         intent.putExtra(FIAT_AMOUNT, "$14.75");
         intent.putExtra(FIAT_TYPE, "dollar");

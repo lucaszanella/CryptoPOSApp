@@ -30,15 +30,15 @@ public class InvoiceActivity extends AppCompatActivity {
         String equivalence = intent.getStringExtra(MainActivity.EQUIVALENCE);
         String address = intent.getStringExtra(MainActivity.ADDRESS);
 
-        text(crypto_amount, R.id.crypto_amount);
+        text(crypto_amount + " BTC", R.id.crypto_amount);
         text(fiat_amount, R.id.fiat_amount);
         text(equivalence, R.id.equivalence);
         String invoice = crypto_type+":"+address+"?amount="+crypto_amount;
-        text(invoice, R.id.address);
+        text(address, R.id.address);
 
 
         try {
-            Bitmap qr = QRCodeUtility.CustomQRCode(address);
+            Bitmap qr = QRCodeUtility.CustomQRCode(invoice);
             ImageView myImage = (ImageView) findViewById(R.id.qr_image);
             myImage.setImageBitmap(qr);
         } catch (Exception e) {
