@@ -8,4 +8,19 @@
         <item name="colorAccent">@color/colorAccent</item>
 
     </style>
+    <style name="KeypadButton" parent="AppTheme">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/border_keypad_button</item>
+    </style>
+
+    <style name="KeypadActionButton" parent="AppTheme">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/border_keypad_action_button</item>
+    </style>
 </resources>
